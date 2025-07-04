@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name - Portfolio</title>
+  <style>
+    /* Header styles */
+    header {
+      background-color: #004080; /* Change to your preferred color */
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      background: white;
+      color: black;
+      top: 100%;
+      left: 0;
+      padding: 0.5rem;
+    }
+    nav ul li:hover ul {
+      display: block;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    nav ul li ul a {
+      color: black;
+    }
+
+    /* Scrollable images section */
+    .scroll-gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #f5f5f5;
+    }
+    .scroll-gallery div {
+      flex: 0 0 auto;
+      text-align: center;
+    }
+    .scroll-gallery img {
+      height: 150px;
+      border-radius: 10px;
+    }
+    .scroll-gallery button {
+      margin-top: 0.5rem;
+    }
+
+    /* Three columns about-me */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .about img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 50%;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #eee;
+      padding: 1rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <ul>
+        <li>
+          Projects
+          <ul>
+            <li><a href="#">Project 1</a></li>
+            <li><a href="#">Project 2</a></li>
+          </ul>
+        </li>
+        <li>
+          Gallery
+          <ul>
+            <li><a href="#">Gallery 1</a></li>
+            <li><a href="#">Gallery 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="scroll-gallery">
+    <div>
+      <img src="https://via.placeholder.com/200" alt="Image 1"/>
+      <div>Caption 1</div>
+      <button>Find out more</button>
+    </div>
+    <div>
+      <img src="https://via.placeholder.com/200" alt="Image 2"/>
+      <div>Caption 2</div>
+      <button>Find out more</button>
+    </div>
+    <div>
+      <img src="https://via.placeholder.com/200" alt="Image 3"/>
+      <div>Caption 3</div>
+      <button>Find out more</button>
+    </div>
+  </section>
+
+  <section class="about">
+    <div><img src="https://via.placeholder.com/150" alt="Your photo"></div>
+    <div>
+      <h2>Who I Am</h2>
+      <p>I am a researcher with a focus on weather forecasting, deep learning, and data science.</p>
+    </div>
+    <div>
+      <h2>What I Do</h2>
+      <p>I build and evaluate models to improve forecasting and understand uncertainty.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 FirstName LastName, Department, Address Street, City, Postcode; 
+    <a href="mailto:email@ac.uk">email@ac.uk</a> 
+    +44 (0) 1111 222 333
+  </footer>
+</body>
+</html>
